@@ -1,0 +1,111 @@
+# EESchema Netlist Version 1.1 created  29/02/2012 08:43:28
+(
+ ( /4F45487B SM0805 C1 100nF
+  ( 1 +5V )
+  ( 2 GND )
+ )
+ ( /4F469210 LV_1602-LCD-6+6pin D_LCD1 LV_1602_LCD_HD44780
+  ( 1 GND )
+  ( 2 +5V )
+  ( 3 N-000020 )
+  ( 4 /RS )
+  ( 5 /RW )
+  ( 6 /EN )
+  ( 7 ? )
+  ( 8 ? )
+  ( 9 ? )
+  ( 10 ? )
+  ( 11 /DB4 )
+  ( 12 /DB5 )
+  ( 13 /DB6 )
+  ( 14 /DB7 )
+  ( 15 N-000009 )
+  ( 16 GND )
+ )
+ ( /4F4547D3 LV_SMD_Jumper_3 JP1 JUMPER3
+  ( 1 +5V )
+  ( 2 /A0 )
+  ( 3 GND )
+ )
+ ( /4F4547F1 LV_SMD_Jumper_3 JP2 JUMPER3
+  ( 1 +5V )
+  ( 2 /A1 )
+  ( 3 GND )
+ )
+ ( /4F4547EB LV_SMD_Jumper_3 JP3 JUMPER3
+  ( 1 +5V )
+  ( 2 /A2 )
+  ( 3 GND )
+ )
+ ( /4F454800 SIL-4 P1 CONN_4
+  ( 1 GND )
+  ( 2 +5V )
+  ( 3 /SDA )
+  ( 4 /SCL )
+ )
+ ( /4F454867 SM0805 R1 4K7
+  ( 1 +5V )
+  ( 2 /SCL )
+ )
+ ( /4F45486A SM0805 R2 4K7
+  ( 1 +5V )
+  ( 2 /SDA )
+ )
+ ( /4F45486F SM0805 R3 100R
+  ( 1 +5V )
+  ( 2 N-000009 )
+ )
+ ( /4F454B3D trim_bourns_3214j RV1 10K
+  ( 1 +5V )
+  ( 2 N-000020 )
+  ( 3 GND )
+ )
+ ( /4F454730 SO16W U1 PCF8574
+  ( 1 /A0 )
+  ( 2 /A1 )
+  ( 3 /A2 )
+  ( 4 /DB4 )
+  ( 5 /DB5 )
+  ( 6 /DB6 )
+  ( 7 /DB7 )
+  ( 8 GND )
+  ( 9 /EN )
+  ( 10 /RW )
+  ( 11 /RS )
+  ( 12 ? )
+  ( 13 ? )
+  ( 14 /SCL )
+  ( 15 /SDA )
+  ( 16 +5V )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}

@@ -1,0 +1,80 @@
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 29/02/2012 08:43:28
+
+BeginCmp
+TimeStamp = /4F45487B;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F469210;
+Reference = D_LCD1;
+ValeurCmp = LV_1602_LCD_HD44780;
+IdModule  = LV_1602-LCD-6+6pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F4547D3;
+Reference = JP1;
+ValeurCmp = JUMPER3;
+IdModule  = LV_SMD_Jumper_3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F4547F1;
+Reference = JP2;
+ValeurCmp = JUMPER3;
+IdModule  = LV_SMD_Jumper_3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F4547EB;
+Reference = JP3;
+ValeurCmp = JUMPER3;
+IdModule  = LV_SMD_Jumper_3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F454800;
+Reference = P1;
+ValeurCmp = CONN_4;
+IdModule  = SIL-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F454867;
+Reference = R1;
+ValeurCmp = 4K7;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F45486A;
+Reference = R2;
+ValeurCmp = 4K7;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F45486F;
+Reference = R3;
+ValeurCmp = 100R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F454B3D;
+Reference = RV1;
+ValeurCmp = 10K;
+IdModule  = trim_bourns_3214j;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F454730;
+Reference = U1;
+ValeurCmp = PCF8574;
+IdModule  = SO16W;
+EndCmp
+
+EndListe
