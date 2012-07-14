@@ -33,15 +33,15 @@ LIBS:lowvoltage
 LIBS:PCF8574_LCD-cache
 EELAYER 25  0
 EELAYER END
-$Descr A4 11700 8267
+$Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "I2C expansion for a HD44780-compatible 16x02 LCD"
 Date "29 feb 2012"
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Rev "0.1"
+Comp "Released under the Creative Commons Attribution Share-Alike 3.0"
+Comment1 "http://lowvoltage.wordpress.com"
+Comment2 "KiCAD schematic and PCB layout by Dimitar Kovachev"
 Comment3 ""
 Comment4 ""
 $EndDescr

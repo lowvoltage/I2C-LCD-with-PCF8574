@@ -1,1 +1,13 @@
-<Placeholder>
+I2C expansion board for a HD44780-compatible 16x02 LCD
+
+Based around an PCF8574 8-bit I/O expander for I2C
+Arduino library: "New Liquid Crystal": https://bitbucket.org/fmalpartida/new-liquidcrystal/wiki/Home
+
+
+KiCAD schematic and PCB layout by Dimitar Kovachev
+http://lowvoltage.wordpress.com/
+
+
+
+Released under the Creative Commons Attribution Share-Alike 3.0 license
+http://creativecommons.org/licenses/by-sa/3.0/

@@ -1,4 +1,4 @@
-update=26/02/2012 13:51:40
+update=Sun 01 Jan 2012 00:00:00 AM EEST
 version=1
 last_client=pcbnew
 [general]
@@ -73,6 +73,7 @@ LibName30=valves
 LibName31=../KiCAD-Libraries/lowvoltage
 [pcbnew]
 version=1
+LastNetListRead=PCF8574_LCD.net
 PadDrlX=320
 PadDimH=700
 PadDimV=700
@@ -82,12 +83,11 @@ TxtPcbH=600
 TxtModV=600
 TxtModH=600
 TxtModW=120
-VEgarde=50
+VEgarde=40
 DrawLar=150
-EdgeLar=150
+EdgeLar=10
 TxtLar=120
 MSegLar=150
-LastNetListRead=PCF8574_LCD.net
 [pcbnew/libraries]
 LibDir=
 LibName1=sockets
@@ -100,6 +100,4 @@ LibName7=display
 LibName8=valves
 LibName9=led
 LibName10=dip_sockets
-LibName11=Potentiometres
-LibName12=w_smd_resistors
-LibName13=../KiCAD-Libraries/lowvoltage
+LibName11=../KiCAD-Libraries/lowvoltage
