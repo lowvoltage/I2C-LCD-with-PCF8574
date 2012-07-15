@@ -1,82 +1,72 @@
 # EESchema Netlist Version 1.1 created  29/02/2012 08:43:28
 (
- ( /4F45487B SM0805 C1 100nF
-  ( 1 +5V )
-  ( 2 GND )
+ ( /4F469210 $noname  D_LCD1 LV_1602_LCD_HD44780 {Lib=LV_1602_LCD_HD44780}
+  (    1 GND )
+  (    2 +5V )
+  (    3 N-000018 )
+  (    4 /RS )
+  (    5 /RW )
+  (    6 /EN )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 /DB4 )
+  (   12 /DB5 )
+  (   13 /DB6 )
+  (   14 /DB7 )
+  (   15 N-000010 )
+  (   16 GND )
  )
- ( /4F469210 LV_1602-LCD-6+6pin D_LCD1 LV_1602_LCD_HD44780
-  ( 1 GND )
-  ( 2 +5V )
-  ( 3 N-000020 )
-  ( 4 /RS )
-  ( 5 /RW )
-  ( 6 /EN )
-  ( 7 ? )
-  ( 8 ? )
-  ( 9 ? )
-  ( 10 ? )
-  ( 11 /DB4 )
-  ( 12 /DB5 )
-  ( 13 /DB6 )
-  ( 14 /DB7 )
-  ( 15 N-000009 )
-  ( 16 GND )
+ ( /4F454B3D $noname  RV1 10K {Lib=POT}
+  (    1 +5V )
+  (    2 N-000018 )
+  (    3 GND )
  )
- ( /4F4547D3 LV_SMD_Jumper_3 JP1 JUMPER3
-  ( 1 +5V )
-  ( 2 /A0 )
-  ( 3 GND )
+ ( /4F45487B $noname  C1 100nF {Lib=C}
+  (    1 +5V )
+  (    2 GND )
  )
- ( /4F4547F1 LV_SMD_Jumper_3 JP2 JUMPER3
-  ( 1 +5V )
-  ( 2 /A1 )
-  ( 3 GND )
+ ( /4F45486F $noname  R3 100R {Lib=R}
+  (    1 +5V )
+  (    2 N-000010 )
  )
- ( /4F4547EB LV_SMD_Jumper_3 JP3 JUMPER3
-  ( 1 +5V )
-  ( 2 /A2 )
-  ( 3 GND )
+ ( /4F45486A $noname  R2 4K7 {Lib=R}
+  (    1 +5V )
+  (    2 /SDA )
  )
- ( /4F454800 SIL-4 P1 CONN_4
-  ( 1 GND )
-  ( 2 +5V )
-  ( 3 /SDA )
-  ( 4 /SCL )
+ ( /4F454867 $noname  R1 4K7 {Lib=R}
+  (    1 +5V )
+  (    2 /SCL )
  )
- ( /4F454867 SM0805 R1 4K7
-  ( 1 +5V )
-  ( 2 /SCL )
+ ( /4F454800 $noname  P1 CONN_4 {Lib=CONN_4}
+  (    1 GND )
+  (    2 +5V )
+  (    3 /SDA )
+  (    4 /SCL )
  )
- ( /4F45486A SM0805 R2 4K7
-  ( 1 +5V )
-  ( 2 /SDA )
+ ( /4F4547D3 $noname  JP1 JUMPER3 {Lib=JUMPER3}
+  (    1 +5V )
+  (    2 /ADDR )
+  (    3 GND )
  )
- ( /4F45486F SM0805 R3 100R
-  ( 1 +5V )
-  ( 2 N-000009 )
- )
- ( /4F454B3D trim_bourns_3214j RV1 10K
-  ( 1 +5V )
-  ( 2 N-000020 )
-  ( 3 GND )
- )
- ( /4F454730 SO16W U1 PCF8574
-  ( 1 /A0 )
-  ( 2 /A1 )
-  ( 3 /A2 )
-  ( 4 /DB4 )
-  ( 5 /DB5 )
-  ( 6 /DB6 )
-  ( 7 /DB7 )
-  ( 8 GND )
-  ( 9 /EN )
-  ( 10 /RW )
-  ( 11 /RS )
-  ( 12 ? )
-  ( 13 ? )
-  ( 14 /SCL )
-  ( 15 /SDA )
-  ( 16 +5V )
+ ( /4F454730 $noname  U1 PCF8574A {Lib=PCF8574}
+  (    1 /ADDR )
+  (    2 /ADDR )
+  (    3 /ADDR )
+  (    4 /DB4 )
+  (    5 /DB5 )
+  (    6 /DB6 )
+  (    7 /DB7 )
+  (    8 GND )
+  (    9 /EN )
+  (   10 /RW )
+  (   11 /RS )
+  (   12 ? )
+  (   13 ? )
+  (   14 /SCL )
+  (   15 /SDA )
+  (   16 +5V )
  )
 )
 *
@@ -86,7 +76,7 @@ $component C1
  C?
  C1-1
 $endlist
-$component R1
+$component R3
  R?
  SM0603
  SM0805
@@ -100,7 +90,7 @@ $component R2
  R?-*
  SM1206
 $endlist
-$component R3
+$component R1
  R?
  SM0603
  SM0805
@@ -109,3 +99,64 @@ $component R3
 $endlist
 $endfootprintlist
 }
+{ Pin List by Nets
+Net 6 "/DB4" "DB4"
+ U1 4
+ D_LCD1 11
+Net 7 "/DB6" "DB6"
+ D_LCD1 13
+ U1 6
+Net 8 "/RS" "RS"
+ D_LCD1 4
+ U1 11
+Net 9 "+5V" "+5V"
+ U1 16
+ C1 1
+ JP1 1
+ P1 2
+ R3 1
+ R2 1
+ R1 1
+ RV1 1
+ D_LCD1 2
+Net 10 "" ""
+ D_LCD1 15
+ R3 2
+Net 12 "/SDA" "SDA"
+ U1 15
+ P1 3
+ R2 2
+Net 13 "/SCL" "SCL"
+ P1 4
+ U1 14
+ R1 2
+Net 14 "/ADDR" "ADDR"
+ U1 2
+ U1 3
+ U1 1
+ JP1 2
+Net 15 "/DB5" "DB5"
+ U1 5
+ D_LCD1 12
+Net 16 "/DB7" "DB7"
+ U1 7
+ D_LCD1 14
+Net 17 "GND" "GND"
+ D_LCD1 1
+ RV1 3
+ D_LCD1 16
+ U1 8
+ C1 2
+ P1 1
+ JP1 3
+Net 18 "" ""
+ D_LCD1 3
+ RV1 2
+Net 19 "/RW" "RW"
+ D_LCD1 5
+ U1 10
+Net 20 "/EN" "EN"
+ D_LCD1 6
+ U1 9
+}
+#End

@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 29/02/2012 08:43:28
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Sun 15 Jul 2012 10:46:44 AM EEST
 
 BeginCmp
 TimeStamp = /4F45487B;
@@ -18,21 +18,7 @@ BeginCmp
 TimeStamp = /4F4547D3;
 Reference = JP1;
 ValeurCmp = JUMPER3;
-IdModule  = LV_SMD_Jumper_3;
-EndCmp
-
-BeginCmp
-TimeStamp = /4F4547F1;
-Reference = JP2;
-ValeurCmp = JUMPER3;
-IdModule  = LV_SMD_Jumper_3;
-EndCmp
-
-BeginCmp
-TimeStamp = /4F4547EB;
-Reference = JP3;
-ValeurCmp = JUMPER3;
-IdModule  = LV_SMD_Jumper_3;
+IdModule  = SIL-3;
 EndCmp
 
 BeginCmp
@@ -73,7 +59,7 @@ EndCmp
 BeginCmp
 TimeStamp = /4F454730;
 Reference = U1;
-ValeurCmp = PCF8574;
+ValeurCmp = PCF8574A;
 IdModule  = SO16W;
 EndCmp
 

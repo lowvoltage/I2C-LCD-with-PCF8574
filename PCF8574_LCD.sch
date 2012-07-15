@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "I2C expansion for a HD44780-compatible 16x02 LCD"
-Date "29 feb 2012"
+Date "14 jul 2012"
 Rev "0.1"
 Comp "Released under the Creative Commons Attribution Share-Alike 3.0"
 Comment1 "http://lowvoltage.wordpress.com"
@@ -115,23 +115,11 @@ Wire Wire Line
 	3700 3050 3700 3450
 Wire Wire Line
 	2000 3100 3850 3100
-Wire Wire Line
-	2900 3050 2900 3400
-Wire Wire Line
-	2850 3300 2850 3500
-Wire Wire Line
-	3400 3400 3400 3500
 Connection ~ 3400 2800
 Wire Wire Line
 	3400 2600 3400 2800
 Wire Wire Line
 	3700 3450 3850 3450
-Wire Wire Line
-	3150 3300 3850 3300
-Wire Wire Line
-	2600 3200 3850 3200
-Wire Wire Line
-	2350 3050 2350 3300
 Wire Wire Line
 	2250 3200 2250 3500
 Wire Wire Line
@@ -260,12 +248,8 @@ F 1 "10K" H 6150 3000 50  0000 C CNN
 	1    6150 3000
 	0    1    1    0   
 $EndComp
-Text Label 3350 3300 0    60   ~ 0
-A2
-Text Label 3300 3200 0    60   ~ 0
-A1
 Text Label 3300 3100 0    60   ~ 0
-A0
+ADDR
 $Comp
 L GND #PWR05
 U 1 1 4F454AE1
@@ -294,48 +278,12 @@ F 1 "GND" H 2250 3430 30  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
-U 1 1 4F4549F2
-P 2850 3500
-F 0 "#PWR08" H 2850 3500 30  0001 C CNN
-F 1 "GND" H 2850 3430 30  0001 C CNN
-	1    2850 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L +5V #PWR09
 U 1 1 4F4549EF
 P 1750 3050
 F 0 "#PWR09" H 1750 3140 20  0001 C CNN
 F 1 "+5V" H 1750 3140 30  0000 C CNN
 	1    1750 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR010
-U 1 1 4F4549EB
-P 2350 3050
-F 0 "#PWR010" H 2350 3140 20  0001 C CNN
-F 1 "+5V" H 2350 3140 30  0000 C CNN
-	1    2350 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR011
-U 1 1 4F4549D1
-P 2900 3050
-F 0 "#PWR011" H 2900 3140 20  0001 C CNN
-F 1 "+5V" H 2900 3140 30  0000 C CNN
-	1    2900 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR012
-U 1 1 4F4549CD
-P 3400 3500
-F 0 "#PWR012" H 3400 3500 30  0001 C CNN
-F 1 "GND" H 3400 3430 30  0001 C CNN
-	1    3400 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -460,24 +408,6 @@ F 1 "CONN_4" V 2150 2100 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L JUMPER3 JP2
-U 1 1 4F4547F1
-P 2600 3300
-F 0 "JP2" H 2550 3150 40  0000 L CNN
-F 1 "JUMPER3" H 2600 3400 40  0000 C CNN
-	1    2600 3300
-	1    0    0    1   
-$EndComp
-$Comp
-L JUMPER3 JP3
-U 1 1 4F4547EB
-P 3150 3400
-F 0 "JP3" H 3100 3250 40  0000 L CNN
-F 1 "JUMPER3" H 3150 3500 40  0000 C CNN
-	1    3150 3400
-	1    0    0    1   
-$EndComp
-$Comp
 L JUMPER3 JP1
 U 1 1 4F4547D3
 P 2000 3200
@@ -491,8 +421,16 @@ L PCF8574 U1
 U 1 1 4F454730
 P 4500 3250
 F 0 "U1" H 4770 3950 60  0000 C CNN
-F 1 "PCF8574" H 4600 2550 60  0000 C CNN
+F 1 "PCF8574A" H 4600 2550 60  0000 C CNN
 	1    4500 3250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3600 3100 3600 3300
+Wire Wire Line
+	3600 3300 3850 3300
+Connection ~ 3600 3100
+Wire Wire Line
+	3850 3200 3600 3200
+Connection ~ 3600 3200
 $EndSCHEMATC
