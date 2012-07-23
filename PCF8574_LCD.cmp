@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Sun 15 Jul 2012 10:46:44 AM EEST
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Sun 01 Jan 2012 00:00:00 AM EEST
 
 BeginCmp
 TimeStamp = /4F45487B;
@@ -8,17 +8,17 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F469210;
-Reference = D_LCD1;
-ValeurCmp = LV_1602_LCD_HD44780;
-IdModule  = LV_1602-LCD-6+6pin;
-EndCmp
-
-BeginCmp
 TimeStamp = /4F4547D3;
 Reference = JP1;
 ValeurCmp = JUMPER3;
 IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /500DA1A2;
+Reference = LCD1;
+ValeurCmp = HD44780;
+IdModule  = LV_1602-LCD-6+6pin;
 EndCmp
 
 BeginCmp

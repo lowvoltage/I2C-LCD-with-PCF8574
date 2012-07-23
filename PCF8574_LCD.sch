@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 29/02/2012 08:42:45
+EESchema Schematic File Version 2  date Sun 01 Jan 2012 00:00:00 AM EEST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,8 +37,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "I2C expansion for a HD44780-compatible 16x02 LCD"
-Date "14 jul 2012"
-Rev "0.1"
+Date "23 jul 2012"
+Rev "0.3"
 Comp "Released under the Creative Commons Attribution Share-Alike 3.0"
 Comment1 "http://lowvoltage.wordpress.com"
 Comment2 "KiCAD schematic and PCB layout by Dimitar Kovachev"
@@ -193,19 +193,6 @@ F 1 "PWR_FLAG" H 2100 3680 30  0000 C CNN
 	1    2100 3500
 	-1   0    0    1   
 $EndComp
-NoConn ~ 6450 3700
-NoConn ~ 6450 3600
-NoConn ~ 6450 3500
-NoConn ~ 6450 3400
-$Comp
-L LV_1602_LCD_HD44780 D_LCD1
-U 1 1 4F469210
-P 6800 3550
-F 0 "D_LCD1" V 7650 3600 60  0000 C CNN
-F 1 "LV_1602_LCD_HD44780" H 6550 3950 60  0000 C CNN
-	1    6800 3550
-	0    1    -1   0   
-$EndComp
 Text Label 3150 2800 0    60   ~ 0
 SCL
 Text Label 3200 2900 0    60   ~ 0
@@ -278,64 +265,64 @@ F 1 "GND" H 2250 3430 30  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR09
+L +5V #PWR08
 U 1 1 4F4549EF
 P 1750 3050
-F 0 "#PWR09" H 1750 3140 20  0001 C CNN
+F 0 "#PWR08" H 1750 3140 20  0001 C CNN
 F 1 "+5V" H 1750 3140 30  0000 C CNN
 	1    1750 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR013
+L +5V #PWR09
 U 1 1 4F454988
 P 5250 4150
-F 0 "#PWR013" H 5250 4240 20  0001 C CNN
+F 0 "#PWR09" H 5250 4240 20  0001 C CNN
 F 1 "+5V" H 5250 4240 30  0000 C CNN
 	1    5250 4150
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR014
+L +5V #PWR010
 U 1 1 4F454908
 P 3600 2100
-F 0 "#PWR014" H 3600 2190 20  0001 C CNN
+F 0 "#PWR010" H 3600 2190 20  0001 C CNN
 F 1 "+5V" H 3600 2190 30  0000 C CNN
 	1    3600 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR015
+L +5V #PWR011
 U 1 1 4F454906
 P 3400 2100
-F 0 "#PWR015" H 3400 2190 20  0001 C CNN
+F 0 "#PWR011" H 3400 2190 20  0001 C CNN
 F 1 "+5V" H 3400 2190 30  0000 C CNN
 	1    3400 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L GND #PWR012
 U 1 1 4F4548DC
 P 2550 2450
-F 0 "#PWR016" H 2550 2450 30  0001 C CNN
+F 0 "#PWR012" H 2550 2450 30  0001 C CNN
 F 1 "GND" H 2550 2380 30  0001 C CNN
 	1    2550 2450
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR017
+L +5V #PWR013
 U 1 1 4F4548D9
 P 2650 1650
-F 0 "#PWR017" H 2650 1740 20  0001 C CNN
+F 0 "#PWR013" H 2650 1740 20  0001 C CNN
 F 1 "+5V" H 2650 1740 30  0000 C CNN
 	1    2650 1650
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR018
+L +5V #PWR014
 U 1 1 4F4548BE
 P 3700 3050
-F 0 "#PWR018" H 3700 3140 20  0001 C CNN
+F 0 "#PWR014" H 3700 3140 20  0001 C CNN
 F 1 "+5V" H 3700 3140 30  0000 C CNN
 	1    3700 3050
 	1    0    0    -1  
@@ -381,19 +368,19 @@ F 1 "4K7" V 3400 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L GND #PWR015
 U 1 1 4F454830
 P 6350 4450
-F 0 "#PWR019" H 6350 4450 30  0001 C CNN
+F 0 "#PWR015" H 6350 4450 30  0001 C CNN
 F 1 "GND" H 6350 4380 30  0001 C CNN
 	1    6350 4450
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L GND #PWR016
 U 1 1 4F454828
 P 3850 4050
-F 0 "#PWR020" H 3850 4050 30  0001 C CNN
+F 0 "#PWR016" H 3850 4050 30  0001 C CNN
 F 1 "GND" H 3850 3980 30  0001 C CNN
 	1    3850 4050
 	1    0    0    -1  
@@ -433,4 +420,17 @@ Connection ~ 3600 3100
 Wire Wire Line
 	3850 3200 3600 3200
 Connection ~ 3600 3200
+$Comp
+L LV_1602_LCD_HD44780_6+6 LCD1
+U 1 1 500DA1A2
+P 6800 3550
+F 0 "LCD1" V 7650 3600 60  0000 C CNN
+F 1 "HD44780" H 6550 3950 60  0000 C CNN
+	1    6800 3550
+	0    1    -1   0   
+$EndComp
+Text Label 6300 3000 0    30   ~ 0
+LCD_CON
+Text Label 6450 4200 2    20   ~ 0
+LCD_ANODE
 $EndSCHEMATC
